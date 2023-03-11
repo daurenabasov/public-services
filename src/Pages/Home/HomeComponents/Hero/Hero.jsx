@@ -14,16 +14,16 @@ const Hero = () => {
             <nav>
               <ul>
                 <li>
-                  <Link to="">The Card</Link>
+                  <Link to="/">Home</Link>
                 </li>
                 <li>
-                  <Link to=""> For Employees</Link>
+                  <Link to="/service"> Сервисы</Link>
                 </li>
                 <li>
-                  <Link to="">About Us</Link>
+                  <Link to="/about">О нас</Link>
                 </li>
                 <li>
-                  <Link to="">Download App</Link>
+                  <Link to="/form">Форма</Link>
                 </li>
               </ul>
               <div className={s.burger}>
