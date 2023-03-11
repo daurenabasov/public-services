@@ -1,0 +1,50 @@
+.Works {
+  margin-top: 4rem;
+  .titles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h1 {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 34px;
+      line-height: 40px;
+      /* identical to box height, or 119% */
+
+      text-align: center;
+      letter-spacing: 0.8px;
+
+      color: #220e5b;
+    }
+    p {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 25px;
+      /* or 148% */
+
+      text-align: center;
+
+      color: #220e5b;
+    }
+  }
+  .cards__container {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+    & > div p {
+      width: 264px;
+      height: 150px;
+      background: #cff47f;
+      text-align: center;
+      padding-top: 1rem;
+      border-radius: 0px 12px 12px 12px;
+    }
+  }
+}

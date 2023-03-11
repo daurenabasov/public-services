@@ -1,0 +1,80 @@
+.Feature {
+  .FeatureTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+  }
+
+  .blocks {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    align-items: center;
+    .left__block {
+      display: flex;
+      flex-direction: column;
+
+
+      h3 {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 40px;
+        /* or 119% */
+
+        letter-spacing: 0.8px;
+        color: #001f1f;
+
+        @media (width<= 735px) {
+          line-height: 35px;
+          font-size: 23px;
+        }
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 34px;
+
+        & > li {
+          display: flex;
+          align-items: center;
+        position: relative;
+
+
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 20px;
+          /* or 152% */
+          color: #001f1f;
+          gap: 10px;
+
+          img {
+            position: absolute;
+              left: -4.5rem;
+          }
+        }
+        @media (width<= 857px) {
+          img {
+            display: none;
+          }
+        }
+      }
+    }
+    .right__block {
+      background-image: url("../../../../Assets/featureBack.png");
+      background-repeat: no-repeat;
+      width: 504px;
+      height: 457px;
+      background-position: center;
+
+      @media (width<= 735px) {
+        display: none;
+      }
+    }
+  }
+}

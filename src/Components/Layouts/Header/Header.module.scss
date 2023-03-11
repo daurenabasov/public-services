@@ -1,0 +1,26 @@
+#header {
+  background: #001f1f;
+  border-radius: 0px;
+  max-width: 100%;
+  min-height: 50px;
+
+  .title__headerTop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px 0px;
+    gap: 10px;
+
+    span {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 18px;
+      /* identical to box height, or 150% */
+
+      color: #cff47f;
+    }
+  }
+}

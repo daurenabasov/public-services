@@ -1,0 +1,71 @@
+.EmployersSection {
+  background: #e1dbfd;
+  border-radius: 0px;
+  min-height: 1174px;
+  margin-top: 3rem;
+  padding: 3rem 0 0 0;
+  .wrapper {
+    max-width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    @media (width<=925px) {
+      flex-direction: column;
+    }
+
+    .image__block {
+      background-image: url("../../../../Assets/EmployersImage.png");
+      width: 540px;
+      height: 505px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      @media (width<=547px) {
+        width: 321px;
+      }
+
+      h4 {
+        float: right;
+
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 40px;
+        /* or 119% */
+
+        letter-spacing: 0.8px;
+
+        color: #220e5b;
+      }
+    }
+    .info__block {
+      display: flex;
+      gap: 24px;
+      img {
+        margin-top: 50px;
+      }
+      .titles {
+        h6 {
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 22px;
+          line-height: 30px;
+          /* or 137% */
+          color: #220e5b;
+        }
+        p {
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 20px;
+          /* or 152% */
+
+          color: #220e5b;
+        }
+      }
+    }
+  }
+}

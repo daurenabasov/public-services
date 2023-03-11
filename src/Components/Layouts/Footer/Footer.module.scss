@@ -1,0 +1,30 @@
+.footer {
+  background: #001414;
+  border-radius: 0px;
+  height: 80vh;
+
+  nav {
+    display: flex;
+
+    ul li:first-child {
+      font-family: "Public Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 11px;
+      line-height: 16px;
+      /* identical to box height, or 145% */
+
+      letter-spacing: 1px;
+      text-transform: uppercase;
+
+      color: #7d9798;
+    }
+
+    ul hr {
+      color: #25b895;
+      border-radius: 0px;
+      width: 16px;
+      height: 1px;
+    }
+  }
+}
