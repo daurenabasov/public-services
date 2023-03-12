@@ -25,6 +25,7 @@ const Hero = () => {
                 <li>
                   <Link to="/form">Форма</Link>
                 </li>
+                <li><Link to="/questions">Вопросы</Link></li>
               </ul>
               <div className={s.burger}>
                 <label htmlFor="check">

@@ -1,10 +1,31 @@
 .footer {
   background: #001414;
   border-radius: 0px;
-  height: 80vh;
+  height: 100%;
+  top: 100vh;
+  bottom: 0;
+  margin-top: 10rem;
 
   nav {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      li {
+        font-family: "Public Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 30px;
+        /* identical to box height, or 200% */
+
+        color: #edeceb;
+        margin-top: 15px;
+      }
+    }
 
     ul li:first-child {
       font-family: "Public Sans";
@@ -25,6 +46,8 @@
       border-radius: 0px;
       width: 16px;
       height: 1px;
+      background: #25b895;
+      margin: 25px 5rem 23px 0px;
     }
   }
 }

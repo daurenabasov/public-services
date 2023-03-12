@@ -5,17 +5,25 @@ import Feature from './HomeComponents/Feature/Feature';
 import EmployersSection from './HomeComponents/EmployersSection/EmployersSection';
 import Works from './HomeComponents/Works/Works';
 import Reviews from './HomeComponents/Reviews/Reviews';
+import Header from '../../Components/Layouts/Header/Header';
+import Footer from '../../Components/Layouts/Footer/Footer';
 
 
 const Home = () => {
     return (
-        <main>
-            <Hero />
-            <Feature />
-            <EmployersSection />
-            <Works />
-            <Reviews />
-        </main>
+
+        <>
+            <Header />
+            <main>
+                <Hero />
+                <Feature />
+                <EmployersSection />
+                <Works />
+                <Reviews />
+            </main>
+            <Footer />
+        </>
+
     );
 };
 
