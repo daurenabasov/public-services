@@ -1,0 +1,17 @@
+.navigation {
+  display: flex;
+  gap: 24px;
+  padding: 3rem 7rem;
+
+  li,
+  a {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    /* identical to box height, or 152% */
+
+    color: #001f1f;
+  }
+}

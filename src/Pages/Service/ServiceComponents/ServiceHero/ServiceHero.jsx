@@ -1,33 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import HeroImage from "../../../../Assets/AboutHeroImage.png";
+import Nav from "../../../../Components/Layouts/Navigation/Nav"
 
 import s from "./ServiceHero.module.scss";
 
 const ServiceHero = () => {
   return (
     <section className={s.ServiceHero}>
-      <div className={s.wrapper} id="container">
+      <div className={s.wrapper}>
         <div className={s.textHero}>
-          <nav>
-            <ul>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/service"> Сервисы</Link>
-              </li>
-              <li>
-                <Link to="/about">О нас</Link>
-              </li>
-              <li>
-                <Link to="/form">Форма</Link>
-              </li>
-            </ul>
-          </nav>
+          <Nav />
           <h3>
-            Exploring cities <br /> through data analysis <br /> and
-            visualization
+            Наши сервисы 
           </h3>
           <p>
             Morphocode is a design and development firm that uses data to <br />

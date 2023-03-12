@@ -1,94 +1,61 @@
 .container {
-  margin-bottom: 100px;
-  .nav {
-    height: 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 35%;
-    ul {
-      display: flex;
-      justify-content: space-around;
-      li {
-        a {
-          text-decoration: none;
-          color: #000000;
-        }
-      }
-    }
+  // margin-bottom: 100px;
+  background-image: url("../../Assets/IMAGE.png");
+  max-width: 100%;
+  background-size: cover;
+  min-height: 100vh;
+  background-position: center;
+
+  .navigation {
+    margin-left: 10%;
   }
-  .info {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 50px;
-    align-items: center;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+  align-items: center;
+  h1 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 43px;
+    /* identical to box height, or 103% */
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #004822;
+  }
+}
+.card {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 50%;
+    padding-bottom: 4%;
+  gap: 20px;
+  .cardBlock {
+    width: 250px;
+    height: 331px;
+    border-radius: 30px;
+    background: #fff;
     h1 {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 36px;
+      /* identical to box height, or 90% */
+
+      text-align: center;
+
+      color: #000000;
     }
-  }
-  .card {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
-    .first {
-      width: 250px;
-      height: 331px;
-      background: #ffffff;
-      box-shadow: 1px 5px 20px 10px rgba(0, 0, 0, 0.2);
-      border-radius: 5%;
-      h1 {
-        padding-top: 30px;
-        font-family: "Nexa";
-        font-style: normal;
-        font-weight: 800;
-        font-size: 24px;
-        line-height: 29px;
-        text-align: center;
-        color: #000000;
-      }
-      p {
-        padding: 20px;
-      }
-    }
-    .second {
-      width: 250px;
-      height: 331px;
-      background: #ffffff;
-      box-shadow: 1px 5px 20px 10px rgba(0, 0, 0, 0.2);
-      border-radius: 5%;
-      h1 {
-        padding-top: 30px;
-        font-family: "Nexa";
-        font-style: normal;
-        font-weight: 800;
-        font-size: 24px;
-        line-height: 29px;
-        text-align: center;
-        color: #000000;
-      }
-      p {
-        padding: 20px;
-      }
-    }
-    .third {
-      width: 250px;
-      height: 331px;
-      background: #ffffff;
-      box-shadow: 1px 5px 20px 10px rgba(0, 0, 0, 0.2);
-      border-radius: 5%;
-      h1 {
-        padding-top: 30px;
-        font-family: "Nexa";
-        font-style: normal;
-        font-weight: 800;
-        font-size: 24px;
-        line-height: 29px;
-        text-align: center;
-        color: #000000;
-      }
-      p {
-        padding: 20px;
-      }
+    p {
+      padding: 20px;
     }
   }
 }

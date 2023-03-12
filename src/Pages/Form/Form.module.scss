@@ -1,140 +1,165 @@
-nav {
-  height: 80px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 35%;
-  ul {
+#form {
+  background-image: url("../../Assets/SupportsBack.png");
+  max-width: 100%;
+  min-height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  nav {
+    height: 80px;
     display: flex;
-    justify-content: space-around;
-    li {
-      a {
-        text-decoration: none;
-        color: #000000;
+    flex-direction: column;
+    justify-content: center;
+    width: 35%;
+    ul {
+      display: flex;
+      justify-content: space-around;
+      li {
+        a {
+          text-decoration: none;
+          color: #ffffff;
+        }
       }
     }
   }
-}
-.hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 200px;
-  margin-top: 100px;
-  h1 {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // margin-bottom: 200px;
     margin-top: 100px;
-    font-family: "Spartan";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 70px;
-    line-height: 78px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #263238;
-  }
-  p {
-    margin-top: 65px;
-    font-family: "Spartan";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 180%;
-    color: #263238;
-    text-align: center;
-  }
-  .btn {
-    display: flex;
-    align-items: center;
-    margin-top: 48px;
-    position: relative;
-    input {
-      background: rgba(38, 50, 56, 0.1);
-      border-radius: 3px;
-      width: 233px;
-      height: 36px;
+
+    .formSubmit {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      input {
+        background: rgba(70, 82, 88, 0.1);
+        border-radius: 3px;
+        max-width: 400px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        padding: 13px 13px 25px;
+        border: none;
+        font-family: "Spartan";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 20px;
+        color: #fff;
+      }
+      input[type="date"]::-webkit-calendar-picker-indicator {
+        opacity: 0;
+      }
+      textarea {
+        background: rgba(70, 82, 88, 0.1);
+        padding: 50px 13px;
+        font-family: "Spartan";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 20px;
+        color: #fff;
+        max-width: 400px;
+      }
+      button {
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 80px;
+        width: 208px;
+        height: 54px;
+        background: none;
+        font-family: "Public Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+        /* identical to box height, or 154% */
+
+        text-align: center;
+        letter-spacing: 0.02px;
+
+        color: #ffffff;
+        margin-bottom: 3rem;
+      }
+    }
+
+    h1 {
+      margin-top: 100px;
+      font-family: "Spartan";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 70px;
+      line-height: 78px;
       display: flex;
       align-items: center;
-      padding: 13px 350px 13px 25px;
-      border: none;
-      font-family: "Spartan";
-      font-style: normal;
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 20px;
-      color: #263238;
-    }
-    button {
-      background: #001f1f;
-      border-radius: 3px;
-      width: 103px;
-      height: 44px;
-      border: none;
-      position: absolute;
-      right: 6px;
-      font-family: "Spartan";
-      font-style: normal;
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 20px;
-      color: #ffffff;
-      cursor: pointer;
-    }
-    button:hover {
-      background: #2e422e;
-      transition: 0.5s;
-    }
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .hero {
-    margin-bottom: 100px;
-    padding: 0 20px 0 20px;
-    h1 {
-      margin-top: 5px;
-      font-size: 50px;
-      line-height: 50px;
-    }
-    p {
-      font-size: 16px;
-      line-height: 150%;
+      text-align: center;
+      color: #fff;
     }
     .btn {
-      input {
-        width: 380px;
-        padding: 13px 150px 13px 25px;
-      }
-      button {
-        width: 120px;
+      display: flex;
+      align-items: center;
+      margin-top: 48px;
+      position: relative;
+
+      button:hover {
+        background: #2e422e;
+        transition: 0.5s;
       }
     }
   }
-}
 
-@media screen and (max-width: 425px) {
-  .hero {
-    padding: 0 20px 0 20px;
-    h1 {
-      margin-top: 5px;
-      font-size: 35px;
-      line-height: 40px;
-    }
-    p {
-      margin-top: 15px;
-      font-size: 15px;
-      line-height: 120%;
-    }
-    .btn {
-      margin-top: 20px;
-      input {
-        width: 250px;
-        padding: 13px 10px 13px 25px;
+  @media screen and (max-width: 700px) {
+    .hero {
+      margin-bottom: 100px;
+      padding: 0 20px 0 20px;
+      h1 {
+        margin-top: 5px;
+        font-size: 50px;
+        line-height: 50px;
       }
-      button {
-        width: 80px;
+      p {
         font-size: 16px;
-        height: 50px;
+        line-height: 150%;
+      }
+      .btn {
+        input {
+          width: 380px;
+          padding: 13px 150px 13px 25px;
+        }
+        button {
+          width: 120px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    .hero {
+      padding: 0 20px 0 20px;
+      h1 {
+        margin-top: 5px;
+        font-size: 35px;
+        line-height: 40px;
+      }
+      p {
+        margin-top: 15px;
+        font-size: 15px;
+        line-height: 120%;
+      }
+      .btn {
+        margin-top: 20px;
+        input {
+          width: 250px;
+          padding: 13px 10px 13px 25px;
+        }
+        button {
+          width: 80px;
+          font-size: 16px;
+          height: 50px;
+        }
       }
     }
   }

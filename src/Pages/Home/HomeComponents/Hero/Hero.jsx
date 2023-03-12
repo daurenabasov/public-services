@@ -1,45 +1,25 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import s from "./Hero.module.scss";
+
 import Sidebar from "../../../.././Components/Layouts/Sidebar/Sidebar";
+import Nav from "../../../../Components/Layouts/Navigation/Nav"
 
 const Hero = () => {
   const [showNav, setShowNav] = useState(false);
+
+  const navigate = useNavigate()
+
+  const getForm = () => {
+    navigate("/form")
+  }
 
   return (
     <>
       <section id={s.Hero}>
         <div className={s.wrapper} id="container">
           <div className={s.left__block}>
-            <nav>
-              <ul>
-                <li>
-                  <Link to="/">Home</Link>
-                </li>
-                <li>
-                  <Link to="/service"> Сервисы</Link>
-                </li>
-                <li>
-                  <Link to="/about">О нас</Link>
-                </li>
-                <li>
-                  <Link to="/form">Форма</Link>
-                </li>
-                <li><Link to="/questions">Вопросы</Link></li>
-              </ul>
-              <div className={s.burger}>
-                <label htmlFor="check">
-                  <input
-                    type="checkbox"
-                    id="check"
-                    onClick={() => setShowNav(!showNav)}
-                  />
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </label>
-              </div>
-            </nav>
+            <Nav />
             <h1>
               Healthcare bills in <br /> small bites
             </h1>
@@ -49,8 +29,7 @@ const Hero = () => {
               need it
             </p>
             <div className={s.btns}>
-              <button>Get in touch</button>
-              <button>Download the app</button>
+              <button onClick={getForm}>Get in touch</button>
             </div>
           </div>
           <div className={s.right__block}></div>

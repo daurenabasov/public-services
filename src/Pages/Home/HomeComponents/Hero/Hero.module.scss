@@ -86,20 +86,6 @@
             transition: 0.4s;
           }
         }
-        button:last-child {
-          border: 2px solid rgba(34, 14, 91, 0.2);
-          border-radius: 240px;
-          background: inherit;
-          width: 192px;
-          height: 48px;
-
-          &:hover {
-            background: #001f1f;
-            color: #cff47f;
-            border: none;
-            transition: 0.4s;
-          }
-        }
       }
     }
 

@@ -3,21 +3,16 @@
     display: flex;
     justify-content: space-between;
 
-    nav ul {
-      display: flex;
-      gap: 24px;
+    li,
+    a {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 20px;
+      /* identical to box height, or 152% */
 
-      li,
-      a {
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 13px;
-        line-height: 20px;
-        /* identical to box height, or 152% */
-
-        color: #001f1f;
-      }
+      color: #001f1f;
     }
 
     h3 {
@@ -42,22 +37,8 @@
       /* or 167% */
 
       color: #434a54;
-    }
 
-    .textHero {
-      @media (width<=1483px) {
-        h3 {
-          font-size: 30px;
-        }
-      }
-      @media (width<=1071px) {
-        background-image: url("../../../../Assets/AboutHeroImage.png");
-        max-width: 600px;
-        min-height: 600px;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-      }
+      
     }
 
     .imageHero {
@@ -79,5 +60,3 @@
     }
   }
 }
-
-

@@ -1,9 +1,9 @@
 import React from "react";
 import s from "./Footer.module.scss";
 
-const Footer = () => {
+const Footer = ({ stylesFooter }) => {
   return (
-    <footer className={s.footer}>
+    <footer className={s.footer} style={stylesFooter}>
 
       <div className={s.wrapper} id="container">
         <nav>
